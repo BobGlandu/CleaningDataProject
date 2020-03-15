@@ -123,6 +123,7 @@ fBodyAccJerk stdY
 
 fBodyAccJerk stdZ
 
+
 **Body Gyroscope**
 
 tBodyGyro meanX
@@ -224,9 +225,9 @@ fBodyBodyGyroJerkMag std
 The following transformations have been applied to the raw data.
 Raw data can be found under the *UCI HAR Dataset* folder
 
-1. extract the training data (X_train.txt) and appends the activity data to it (Y_train.txt)
-2. extract the test data (X_test.txt) and appends the activity data to it (y_test.txt)
-3. merge the two sets with bind_rows into a new set called *complete_set*
+1. extract the training data (X_train.txt) and append the activity data to it (Y_train.txt)
+2. extract the test data (X_test.txt) and append the activity data to it (y_test.txt)
+3. merge the two resulting sets with bind_rows into a new set called *complete_set*
 4. use grep and select to keep only the variables pertaining to standard deviation "std()" and mean "mean()"
 5. read activity labels from file "activity_labels.txt"
 6. convert activity variable to a factor using levels collected in the previous step
