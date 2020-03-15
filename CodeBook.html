@@ -496,9 +496,9 @@ summary {
 <h2>Data transformations</h2>
 <p>The following transformations have been applied to the raw data. Raw data can be found under the <em>UCI HAR Dataset</em> folder</p>
 <ol style="list-style-type: decimal">
-<li>extract the training data (X_train.txt) and appends the activity data to it (Y_train.txt)</li>
-<li>extract the test data (X_test.txt) and appends the activity data to it (y_test.txt)</li>
-<li>merge the two sets with bind_rows into a new set called <em>complete_set</em></li>
+<li>extract the training data (X_train.txt) and append the activity data to it (Y_train.txt)</li>
+<li>extract the test data (X_test.txt) and append the activity data to it (y_test.txt)</li>
+<li>merge the two resulting sets with bind_rows into a new set called <em>complete_set</em></li>
 <li>use grep and select to keep only the variables pertaining to standard deviation “std()” and mean “mean()”</li>
 <li>read activity labels from file “activity_labels.txt”</li>
 <li>convert activity variable to a factor using levels collected in the previous step</li>
